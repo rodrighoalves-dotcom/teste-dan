@@ -1,0 +1,142 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #f5f7fb;
+  color: #0f172a;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: -16px -16px 14px;
+  padding: 15px 16px;
+  background: linear-gradient(135deg, #071531, #0d2d58);
+  color: #fff;
+}
+
+.brand-header img {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .28);
+}
+
+.brand-header h1 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: .1px;
+}
+
+.brand-header p {
+  margin: 4px 0 0;
+  color: #b9d9ef;
+  font-size: 11px;
+  letter-spacing: .2px;
+}
+
+.brand-header strong {
+  color: #5eead4;
+  letter-spacing: .6px;
+}
+
+.status {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.status.waiting {
+  background: #fff8e6;
+  color: #854d0e;
+  border: 1px solid #fde68a;
+}
+
+.status.active {
+  background: #ecfdf5;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.status.stopped {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.btn {
+  width: 100%;
+  min-height: 39px;
+  padding: 9px 10px;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(15, 23, 42, .12);
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.btn:disabled {
+  cursor: wait;
+  opacity: .68;
+}
+
+.btn-primary { background: #16a34a; color: #fff; }
+.btn-danger { background: #dc2626; color: #fff; }
+.btn-dashboard { background: #0f766e; color: #fff; }
+.btn-resumo { background: #2563eb; color: #fff; }
+
+.divider {
+  border-top: 1px solid #dbe3ee;
+  margin: 14px 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 10px;
+  color: #64748b;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 9px 0;
+  font-size: 12px;
+  color: #334155;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  accent-color: #0f766e;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-group .btn {
+  flex: 1;
+}
