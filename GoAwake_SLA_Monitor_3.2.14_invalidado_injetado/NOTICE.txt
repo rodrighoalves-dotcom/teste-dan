@@ -1,5 +1,0 @@
-Goawake SLA Monitor
-© 2026 DAVES TECH. Todos os direitos reservados.
-
-Software desenvolvido para apoio ao monitoramento operacional.
-O uso de nomes de plataformas de terceiros não implica vínculo, endosso ou titularidade sobre suas marcas.
