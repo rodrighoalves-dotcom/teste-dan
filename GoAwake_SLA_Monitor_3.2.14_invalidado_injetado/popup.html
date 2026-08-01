@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Goawake SLA Monitor</title>
+  <link rel="stylesheet" href="popup/popup.css">
+</head>
+<body>
+  <header class="brand-header">
+    <img src="assets/branding/daves-tech-proposal.png" alt="Símbolo DAVES TECH">
+    <div>
+      <h1>Goawake SLA Monitor</h1>
+      <p>Desenvolvido por <strong>DAVES TECH</strong></p>
+    </div>
+  </header>
+  <div id="status" class="status waiting">⏳ Aguardando...</div>
+  <button id="btnIniciar" class="btn btn-primary">▶ Iniciar Monitor</button>
+  <button id="btnParar" class="btn btn-danger" style="display:none;">⏹ Parar Monitor</button>
+  <div class="divider"></div>
+  <div class="btn-group">
+    <button id="btnDashboard" class="btn btn-dashboard">📊 Dashboard</button>
+    <button id="btnResumoAgora" class="btn btn-resumo">📋 Resumo SLA</button>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="chkAutoRelatorio">
+    <label for="chkAutoRelatorio">Relatório automático (a cada hora)</label>
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="chkAutoAutor">
+    <label for="chkAutoAutor">Contagem por autor (Audit oculta)</label>
+  </div>
+  <div class="divider"></div>
+  <div class="info">
+    <span>Versão <span id="versaoExtensao">3.2.3</span></span>
+    <span>© 2026 DAVES TECH</span>
+  </div>
+  <script src="shared/config.js"></script>
+  <script src="shared/logger.js"></script>
+  <script src="popup/monitor-injected.js"></script>
+  <script src="popup/popup-controller.js"></script>
+</body>
+</html>
